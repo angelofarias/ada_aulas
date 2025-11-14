@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\uso\\OneDrive\\\u00C1rea de Trabalho\\AdaModulo2\\Ada\\",
+  "WorkspaceRootPath": "C:\\Users\\uso\\OneDrive\\\u00C1rea de Trabalho\\AdaModulo2\\ada_aulas\\Ada\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A27606E-47FC-44A1-ACC2-4F6C44AA2C58}|TodoApp\\TodoApp.csproj|c:\\users\\uso\\onedrive\\\u00E1rea de trabalho\\adamodulo2\\ada\\todoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A27606E-47FC-44A1-ACC2-4F6C44AA2C58}|TodoApp\\TodoApp.csproj|c:\\users\\uso\\onedrive\\\u00E1rea de trabalho\\adamodulo2\\ada_aulas\\ada\\todoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A27606E-47FC-44A1-ACC2-4F6C44AA2C58}|TodoApp\\TodoApp.csproj|solutionrelative:todoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\uso\\OneDrive\\\u00C1rea de Trabalho\\AdaModulo2\\Ada\\TodoApp\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\uso\\OneDrive\\\u00C1rea de Trabalho\\AdaModulo2\\ada_aulas\\Ada\\TodoApp\\Program.cs",
               "RelativeDocumentMoniker": "TodoApp\\Program.cs",
-              "ToolTip": "C:\\Users\\uso\\OneDrive\\\u00C1rea de Trabalho\\AdaModulo2\\Ada\\TodoApp\\Program.cs",
+              "ToolTip": "C:\\Users\\uso\\OneDrive\\\u00C1rea de Trabalho\\AdaModulo2\\ada_aulas\\Ada\\TodoApp\\Program.cs",
               "RelativeToolTip": "TodoApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T00:04:10.63Z",
               "EditorCaption": ""
