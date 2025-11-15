@@ -19,7 +19,6 @@ namespace TodoApp
 
             app.MapControllers();
 
-            // Roda aplicação
             app.Run();
         }
     }
