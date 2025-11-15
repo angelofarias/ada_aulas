@@ -19,6 +19,7 @@ namespace TodoApp
 
             app.MapControllers();
 
+            // teste local
             app.Run();
         }
     }
