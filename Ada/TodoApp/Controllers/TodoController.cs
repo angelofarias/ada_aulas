@@ -31,15 +31,15 @@ namespace TodoApp.Controllers
 
         [HttpPost]
         [Route("/api/todo")] // POST /api/todo
-        // Model Binding - o FromBody
+        // Model Binding
         public IActionResult CreateTodo([FromBody] Todo todo)
         {
-            if (TodoList.Tasks.ContainsKey(todo.Id))
-                return Conflict(todo);
+            var existingTodo = todoRepository.GetById(todo.Id);
+            if (existingTodo != null)
+                return Conflict(existingTodo);
 
-            TodoList.Tasks.Add(todo.Id, todo);
-
-            return Created(); //asp.net vai mudar para um No Content.
+            todo = todoRepository.Create(todo);
+            return Created();
         }
 
         [HttpPut]
@@ -50,27 +50,27 @@ namespace TodoApp.Controllers
             if (id != todo.Id)
                 return BadRequest();
 
-            if (!TodoList.Tasks.ContainsKey(id))
+            var existingTodo = todoRepository.GetById(todo.Id);
+            if (existingTodo == null)
                 return NotFound();
 
-            var varteste = TodoList.Tasks[id];
+            existingTodo.Title = todo.Title;
+            existingTodo.Description = todo.Description;
+            existingTodo.IsCompleted = todo.IsCompleted;
 
-            varteste.Title = todo.Title;
-            varteste.Description = todo.Description;
-            varteste.IsCompleted = todo.IsCompleted;
-
-            return Ok(varteste);
+            var retorno = todoRepository.Update(existingTodo);
+            return Ok(retorno);
         }
 
         [HttpDelete]
         [Route("/api/todo/{id}")]
         public IActionResult Delete(int id)
         {
-            if (!TodoList.Tasks.ContainsKey(id))
+            var existingTodo = todoRepository.GetById(id);
+            if (existingTodo == null)
                 return NotFound();
 
-            TodoList.Tasks.Remove(id);
-
+            todoRepository.Delete(id);
             return NoContent();
         }
     }
