@@ -1,4 +1,4 @@
-﻿namespace TodoApp.Models
+namespace TodoApp.Models
 {
     public class Todo
     {
